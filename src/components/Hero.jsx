@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import myImage from "../images/Tejjan-hero.png";
-
+const roles = ["Aspiring Data Scientist", "AI/ML Enthusiast"];
 export default function Hero() {
-
-  const roles = [
-    "Aspiring Data Scientist",
-    "AI/ML Enthusiast"
-  ];
 
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");
