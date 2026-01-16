@@ -32,9 +32,7 @@ export default function Certificates() {
 
   return (
     <section id="certifications" className="cert-section section-alt">
-      <h2 className="cert-title">
-        <span className="gold-line"></span> Certifications
-      </h2>
+      <h2 className="cert-title">Certifications</h2>
 
       <div className="cert-container">
         <button className="cert-arrow left" onClick={scrollLeft}>‹</button>

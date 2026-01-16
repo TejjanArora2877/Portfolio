@@ -28,9 +28,7 @@ const Internships = () => {
 
   return (
     <section id="internships" className="internship-section section-alt">
-      <h2 className="section-title">
-        <span className="gold-line" /> Internships & Training
-      </h2>
+      <h2 className="section-title">Internships & Training</h2>
 
       <div className="internship-grid">
         {internships.map((item, index) => (
