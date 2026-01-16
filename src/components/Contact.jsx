@@ -9,10 +9,10 @@ export default function Contact() {
 
       <Reveal>
         <div className="contact-icons">
-          <a href="https://instagram.com/yourprofile" target="_blank"><FaInstagram /></a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank"><FaLinkedin /></a>
-          <a href="https://github.com/yourgithub" target="_blank"><FaGithub /></a>
-          <a href="mailto:your@email"><MdEmail /></a>
+          <a href="https://www.instagram.com/tejjan_arora" target="_blank"><FaInstagram /></a>
+          <a href="https://linkedin.com/in/tejjan-arora-97011428b" target="_blank"><FaLinkedin /></a>
+          <a href="https://github.com/TejjanArora2877" target="_blank"><FaGithub /></a>
+          <a href="mailto:aroratejjan7@gmail.com"><MdEmail /></a>
         </div>
       </Reveal>
     </section>

@@ -3,10 +3,6 @@ import Reveal from "./Reveal";
 export default function Projects() {
   const projectData = [
     {
-      title: "Hotel Management System (Java + MySQL)",
-      desc: "Developed a hotel management system supporting bookings, customer records and room management using Java and MySQL."
-    },
-    {
       title: "Tic-Tac-Toe AI (Python - Minimax)",
       desc: "Built a competitive Tic-Tac-Toe AI using the Minimax algorithm without GUI."
     },
@@ -21,6 +17,10 @@ export default function Projects() {
     {
       title: "CNN Model - Cattle Breed Identification",
       desc: "Developed a CNN model to classify cattle breeds from images using custom dataset and training pipeline."
+    },
+    {
+      title: "Hotel Management System (Java + MySQL)",
+      desc: "Developed a hotel management system supporting bookings, customer records and room management using Java and MySQL."
     }
   ];
 
@@ -30,7 +30,7 @@ export default function Projects() {
 
       <div className="projects-left">
         <h2>Projects</h2>
-        <a href="https://github.com/TejjanArora9877"
+        <a href="https://github.com/TejjanArora2877"
            target="_blank"
            className="github-main-btn">
           View GitHub →

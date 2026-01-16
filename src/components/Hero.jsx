@@ -56,7 +56,12 @@ export default function Hero() {
             <span className="cursor">|</span>
           </p>
 
-          <button className="resume-btn">Download Resume</button>
+          <button className="resume-btn">
+  <a href="https://linkedin.com/in/tejjan-arora-97011428b" target="_blank" rel="noreferrer">
+    Visit LinkedIn Profile
+  </a>
+</button>
+
         </div>
 
       </div>
