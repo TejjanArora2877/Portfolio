@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.f88cfb37.css",
+    "main.js": "/Portfolio/static/js/main.93ab1136.js",
+    "static/js/453.15a626a8.chunk.js": "/Portfolio/static/js/453.15a626a8.chunk.js",
+    "static/media/Tejjan-hero.png": "/Portfolio/static/media/Tejjan-hero.3b5247b72a7f9e3ec058.png",
+    "static/media/Certi6.jpeg": "/Portfolio/static/media/Certi6.7fe96c389ba20c5fbdbc.jpeg",
+    "static/media/Certi7.jpeg": "/Portfolio/static/media/Certi7.8424332cc8c782597e63.jpeg",
+    "static/media/Certi4.jpeg": "/Portfolio/static/media/Certi4.a7b2abf541111bdbdb00.jpeg",
+    "static/media/Certi3.jpeg": "/Portfolio/static/media/Certi3.1ca9f78eea284b7b244d.jpeg",
+    "static/media/Certi1.jpeg": "/Portfolio/static/media/Certi1.ec7976403c02236301d1.jpeg",
+    "static/media/Certi2.jpeg": "/Portfolio/static/media/Certi2.64e13460390a23a4fb70.jpeg",
+    "static/media/Certi5.jpeg": "/Portfolio/static/media/Certi5.f167aa3305d8b5820bcf.jpeg",
+    "index.html": "/Portfolio/index.html",
+    "main.f88cfb37.css.map": "/Portfolio/static/css/main.f88cfb37.css.map",
+    "main.93ab1136.js.map": "/Portfolio/static/js/main.93ab1136.js.map",
+    "453.15a626a8.chunk.js.map": "/Portfolio/static/js/453.15a626a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f88cfb37.css",
+    "static/js/main.93ab1136.js"
+  ]
+}
