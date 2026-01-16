@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import myImage from "../images/Tejjan-hero.png"; // Update filename
+import myImage from "../images/Tejjan-hero.png";
 
 export default function Hero() {
+
   const roles = [
     "Aspiring Data Scientist",
     "AI/ML Enthusiast"
@@ -10,34 +11,36 @@ export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [speed] = useState(120);
 
+  const speed = 120; // fixed
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-  const current = roles[roleIndex];
-  let typingSpeed = speed;
 
-  if (isDeleting) typingSpeed = 60;
+    const current = roles[roleIndex];
+    let typingSpeed = isDeleting ? 60 : speed;
 
-  const timeout = setTimeout(() => {
-    setText(
-      isDeleting
-        ? current.substring(0, text.length - 1)
-        : current.substring(0, text.length + 1)
-    );
+    const timeout = setTimeout(() => {
+      setText(
+        isDeleting
+          ? current.substring(0, text.length - 1)
+          : current.substring(0, text.length + 1)
+      );
 
-    if (!isDeleting && text === current) {
-      setTimeout(() => setIsDeleting(true), 2000);
-    }
+      if (!isDeleting && text === current) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      }
 
-    if (isDeleting && text === "") {
-      setIsDeleting(false);
-      setRoleIndex((prev) => (prev + 1) % roles.length);
-    }
-  }, typingSpeed);
+      if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }, typingSpeed);
 
-  return () => clearTimeout(timeout);
-}, [text, isDeleting, roleIndex, roles, speed]);
+    return () => clearTimeout(timeout);
 
+  }, [text, isDeleting, roleIndex]);
+  
 
   return (
     <section id="hero" className="hero">
@@ -57,11 +60,10 @@ export default function Hero() {
           </p>
 
           <button className="resume-btn">
-  <a href="https://linkedin.com/in/tejjan-arora-97011428b" target="_blank" rel="noreferrer">
-    Visit LinkedIn Profile
-  </a>
-</button>
-
+            <a href="https://linkedin.com/in/tejjan-arora-97011428b" target="_blank" rel="noreferrer">
+              Visit LinkedIn Profile
+            </a>
+          </button>
         </div>
 
       </div>
