@@ -31,7 +31,7 @@ export default function Projects() {
       <div className="projects-left">
         <h2>Projects</h2>
         <a href="https://github.com/TejjanArora2877"
-           target="_blank"
+           target="_blank" rel="noreferrer"
            className="github-main-btn">
           View GitHub →
         </a>

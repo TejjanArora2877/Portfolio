@@ -10,35 +10,34 @@ export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [speed, setSpeed] = useState(120);
+  const [speed] = useState(120);
 
   useEffect(() => {
-    const current = roles[roleIndex];
-    let typingSpeed = speed;
+  const current = roles[roleIndex];
+  let typingSpeed = speed;
 
-    if (isDeleting) typingSpeed = 60;
+  if (isDeleting) typingSpeed = 60;
 
-    const timeout = setTimeout(() => {
-      setText(
-        isDeleting
-          ? current.substring(0, text.length - 1)
-          : current.substring(0, text.length + 1)
-      );
+  const timeout = setTimeout(() => {
+    setText(
+      isDeleting
+        ? current.substring(0, text.length - 1)
+        : current.substring(0, text.length + 1)
+    );
 
-      // If complete typing
-      if (!isDeleting && text === current) {
-        setTimeout(() => setIsDeleting(true), 2000);
-      }
+    if (!isDeleting && text === current) {
+      setTimeout(() => setIsDeleting(true), 2000);
+    }
 
-      // If deleting complete
-      if (isDeleting && text === "") {
-        setIsDeleting(false);
-        setRoleIndex((prev) => (prev + 1) % roles.length);
-      }
-    }, typingSpeed);
+    if (isDeleting && text === "") {
+      setIsDeleting(false);
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }
+  }, typingSpeed);
 
-    return () => clearTimeout(timeout);
-  }, [text, isDeleting, roleIndex]);
+  return () => clearTimeout(timeout);
+}, [text, isDeleting, roleIndex, roles, speed]);
+
 
   return (
     <section id="hero" className="hero">
